@@ -1,0 +1,50 @@
+// Global styling for this template
+html{
+  height: 100%;
+  position: relative;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+*,
+*::after,
+*::before
+{
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Ubuntu', sans-serif;
+}
+p{
+  font-size:16px;
+}
+.container{
+  // width:86%;
+  // width:1170px;
+}
+.get-started.banner-btn{
+}
+.get-started{
+  max-width: 182px;
+  font-weight: 600;
+  font-size: 20px;
+  height:45px;
+  padding: 3px 18px 5px;
+  background: #76CF20;
+  border-radius: 4px;
+  text-align: center;
+}
+.mid-btn.get-started{
+  margin-top:45px;
+  margin-bottom:45px;
+  display: flex;
+  margin: 0 auto;
+}
+.customer-btn{
+  margin-top:20px;
+}
+.secondary-content {
+  float: none !important;
+}

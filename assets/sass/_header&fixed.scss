@@ -1,0 +1,170 @@
+body{
+   header{
+       .nav-scroll-down{
+           top:0 !important;
+       }
+       ul li a:hover{
+        border-bottom:2px solid orange;
+        background:none;
+       }
+        .banner{
+            background: url(../images/banner.jpg) center no-repeat;
+            height: 468px;
+            position: relative;
+            &::before{
+                content:"";
+                left:0;
+                top:0;
+                width: 100%;
+                bottom:0;
+                position: absolute;
+                background: rgba(0,0,0, .4)
+            }
+            .banner-inner{
+                position: absolute;
+            }
+            h2,
+            p{
+                display: flex;
+                padding-left:18px;
+                flex-basis: 539px;
+                color:$white;
+                letter-spacing: 1px;
+                margin-bottom:12px;
+            }
+            h2{
+                font-size:3.1em;
+                font-weight: 400;
+            }
+            p{
+               padding-top:20px; 
+                font-size:1.2em;
+            }
+            
+       }
+        nav{
+            z-index: 999;
+            .nav-wrapper{
+                padding-top:3px;
+            }
+        }
+        #lp-nav{
+            top: 0;
+            display: block;
+            transition-delay: .1s;
+            transition: top 0.3s;
+        }
+   }
+   
+}
+
+/*-- small size show only section --*/
+.call-us-small-size{
+    .row{
+        margin-bottom:0px;
+        p{
+            letter-spacing: 1px;
+            padding:12px 0;
+            margin:0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+/*--  fixed icon add --*/
+.fixed-icon-add{
+    background-color:#0071B2; box-shadow:0 0 4px rgba(0,0,0, .2),   0 0 5px 4px rgba(0,0,0, .1);
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+        height: 72px;
+        line-height: 64px;
+    }
+    nav .brand-logo{
+        padding-top:7px;
+    }
+}
+
+/* -- media queries -- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    
+    .banner{
+        height:370px;
+        max-width:100%;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size:2.1em !important;
+        }
+        p{
+            padding-top:10px !important;
+        }
+    }
+    .banner-inner{
+        padding-right:18px;
+        padding-left:18px;
+    }
+    #content #feature .single-feature {
+        padding: 18px 0 !important;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    .container{
+        width:594px;
+    }
+    .banner{
+        background-size: cover;
+        width:100%;
+        display: flex;
+        align-items: center;
+        top:-2.6px;
+        h2{
+            font-size:2.1em !important;
+        }
+    }
+    .banner-inner{
+        padding-right:18px;
+        padding-left:18px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width:991px) {
+    .container{
+        width:750px;
+    }
+    .banner{
+        margin-top:-2.6px;
+        display: flex;
+        align-items: center;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .container{
+        width:970px;
+    }
+    .banner{
+        display: flex;
+        align-items: center;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .container{
+        width:1170px;
+    }
+    
+  }
